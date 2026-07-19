@@ -1,0 +1,10 @@
+[user]
+	name = gschlabitz
+	email = guido.schlabitz@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+
+[includeIf "gitdir:~/Projects/github.com/grinternal/"]
+    path = ~/.gitconfig-govrecover
