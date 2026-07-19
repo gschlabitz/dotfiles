@@ -1,0 +1,101 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // editor behaviors
+  "autosave": "on_focus_change",
+  "base_keymap": "VSCode",
+  "preferred_line_length": 80,
+
+  // styling
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "haku-dark"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme_overrides": {
+    "haku-dark": {
+      "deleted": "#ff6b6b",
+      "editor.document_highlight.read_background": "#ffd16644",
+      "editor.document_highlight.write_background": "#ffb86c66",
+      "editor.document_highlight.bracket_background": "#ffd16655",
+      "editor.indent_guide": "#00000000",
+      "editor.indent_guide_active": "#333",
+      "search.match_background": "#ffd16666",
+      "players": [
+        {
+          "cursor": "#919191",
+          "background": "#91b99bff",
+          "selection": "#91b99b66"
+        }
+      ],
+      "syntax": {
+        "punctuation.bracket": {
+          "color": "#777"
+        }
+      },
+      "title_bar.background": "#000"
+    }
+  },
+
+  // dock sizing and location
+  "resize_all_panels_in_dock": ["left", "right"],
+  "terminal": {
+    "flexible": false,
+    "default_width": 640
+  },
+  "git_panel": {
+    "tree_view": false,
+    "dock": "left"
+  },
+
+  "agent": {
+    "flexible": false,
+    "default_width": 640,
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "default": "allow"
+        },
+        "fetch": {
+          "default": "allow"
+        }
+      }
+    },
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-5.5-pro",
+      "enable_thinking": true,
+      "effort": "high"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "diff_view_style": "unified",
+
+  "project_panel": {
+    "dock": "left"
+  },
+  "agent_servers": {
+    "opencode": {
+      "default_config_options": {
+        "model": "mlx/mlx-community/Qwen2.5-Coder-7B-Instruct-4bit"
+      },
+      "type": "registry"
+    },
+    "codex-acp": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "type": "registry"
+    }
+  }
+}
